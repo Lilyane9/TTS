@@ -128,6 +128,13 @@ def phoneme_cleaners(text):
     text = remove_aux_symbols(text)
     text = collapse_whitespace(text)
     return text
+def x_cleaners(text):
+    """Pipeline for phonemes mode, including number and abbreviation expansion."""
+    
+    text = replace_symbols(text)
+    text = remove_aux_symbols(text)
+    text = collapse_whitespace(text)
+    return text
 
 
 def french_cleaners(text):
