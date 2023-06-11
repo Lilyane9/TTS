@@ -4,8 +4,8 @@ import re
 abbreviations_en = [
     (re.compile("\\b%s\\." % x[0], re.IGNORECASE), x[1])
     for x in [
-        ("mrs", "misess"),
-        ("mr", "mister"),
+        ("г–н", "тосподин"),
+        ("д-р", "доктор"),
         ("dr", "doctor"),
         ("st", "saint"),
         ("co", "company"),
